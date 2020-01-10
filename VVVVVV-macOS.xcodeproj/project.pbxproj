@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		A1D6C55B23C91E7700A408FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C55A23C91E7700A408FD /* AppDelegate.m */; };
 		A1D6C55D23C91E7A00A408FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D6C55C23C91E7A00A408FD /* Assets.xcassets */; };
-		A1D6C5CA23C923BF00A408FD /* lodepng.c in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C57023C923BE00A408FD /* lodepng.c */; };
-		A1D6C5D023C923BF00A408FD /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C58323C923BE00A408FD /* tinystr.cpp */; };
-		A1D6C5D123C923BF00A408FD /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C58423C923BE00A408FD /* tinyxmlparser.cpp */; };
-		A1D6C5D223C923BF00A408FD /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C58523C923BE00A408FD /* tinyxmlerror.cpp */; };
-		A1D6C5D323C923BF00A408FD /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = A1D6C58623C923BE00A408FD /* readme.txt */; };
-		A1D6C5D423C923BF00A408FD /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C58723C923BE00A408FD /* tinyxml.cpp */; };
 		A1D6C60B23C928E000A408FD /* physfs_archiver_dir.c in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C5AB23C923BE00A408FD /* physfs_archiver_dir.c */; };
 		A1D6C60C23C928E000A408FD /* physfs_archiver_unpacked.c in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C5A723C923BE00A408FD /* physfs_archiver_unpacked.c */; };
 		A1D6C60D23C928E000A408FD /* physfs_archiver_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C5B223C923BE00A408FD /* physfs_archiver_zip.c */; };
@@ -65,6 +59,13 @@
 		A1D6C68223C936EB00A408FD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D6C68123C936EB00A408FD /* IOKit.framework */; };
 		A1D6C68423C936F700A408FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D6C68323C936F700A408FD /* Foundation.framework */; };
 		A1D6C68623C9382300A408FD /* data.zip in Resources */ = {isa = PBXBuildFile; fileRef = A1D6C68523C9382300A408FD /* data.zip */; };
+		A1D6C69123C93BA800A408FD /* lodepng.c in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C57023C923BE00A408FD /* lodepng.c */; };
+		A1D6C69223C93BBD00A408FD /* liblodepng.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D6C68D23C93BA200A408FD /* liblodepng.a */; };
+		A1D6C69D23C93BEF00A408FD /* tinystr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C58323C923BE00A408FD /* tinystr.cpp */; };
+		A1D6C69E23C93BEF00A408FD /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C58423C923BE00A408FD /* tinyxmlparser.cpp */; };
+		A1D6C69F23C93BEF00A408FD /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C58523C923BE00A408FD /* tinyxmlerror.cpp */; };
+		A1D6C6A023C93BEF00A408FD /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1D6C58723C923BE00A408FD /* tinyxml.cpp */; };
+		A1D6C6A123C93BF800A408FD /* libtinyxml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D6C69923C93BDC00A408FD /* libtinyxml.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = A1D6C60623C928C700A408FD;
 			remoteInfo = physfs;
+		};
+		A1D6C69323C93BBD00A408FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D6C54E23C91E7600A408FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D6C68C23C93BA200A408FD;
+			remoteInfo = lodepng;
+		};
+		A1D6C6A223C93BF800A408FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1D6C54E23C91E7600A408FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1D6C69823C93BDC00A408FD;
+			remoteInfo = tinyxml;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -195,6 +210,8 @@
 		A1D6C68123C936EB00A408FD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		A1D6C68323C936F700A408FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1D6C68523C9382300A408FD /* data.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = data.zip; path = "../../../Downloads/VVVVVV-MP/data.zip"; sourceTree = "<group>"; };
+		A1D6C68D23C93BA200A408FD /* liblodepng.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblodepng.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D6C69923C93BDC00A408FD /* libtinyxml.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtinyxml.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,13 +221,29 @@
 			files = (
 				A1D6C68423C936F700A408FD /* Foundation.framework in Frameworks */,
 				A1D6C67E23C9365A00A408FD /* libSDL2-2.0.0.dylib in Frameworks */,
+				A1D6C6A123C93BF800A408FD /* libtinyxml.a in Frameworks */,
 				A1D6C67C23C9365A00A408FD /* libSDL2_mixer-2.0.0.dylib in Frameworks */,
+				A1D6C69223C93BBD00A408FD /* liblodepng.a in Frameworks */,
 				A1D6C61623C92AEE00A408FD /* libphysfs.a in Frameworks */,
 				A1D6C68223C936EB00A408FD /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A1D6C60523C928C700A408FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D6C68B23C93BA200A408FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D6C69723C93BDC00A408FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,6 +269,8 @@
 			children = (
 				A1D6C55623C91E7700A408FD /* VVVVVV-macOS.app */,
 				A1D6C60723C928C700A408FD /* libphysfs.a */,
+				A1D6C68D23C93BA200A408FD /* liblodepng.a */,
+				A1D6C69923C93BDC00A408FD /* libtinyxml.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -402,6 +437,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1D6C68923C93BA200A408FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D6C69523C93BDC00A408FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -418,6 +467,8 @@
 			);
 			dependencies = (
 				A1D6C61823C92AEE00A408FD /* PBXTargetDependency */,
+				A1D6C69423C93BBD00A408FD /* PBXTargetDependency */,
+				A1D6C6A323C93BF800A408FD /* PBXTargetDependency */,
 			);
 			name = "VVVVVV-macOS";
 			productName = "VVVVVV-macOS";
@@ -441,6 +492,40 @@
 			productReference = A1D6C60723C928C700A408FD /* libphysfs.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		A1D6C68C23C93BA200A408FD /* lodepng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D6C68E23C93BA200A408FD /* Build configuration list for PBXNativeTarget "lodepng" */;
+			buildPhases = (
+				A1D6C68923C93BA200A408FD /* Headers */,
+				A1D6C68A23C93BA200A408FD /* Sources */,
+				A1D6C68B23C93BA200A408FD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lodepng;
+			productName = lodepng;
+			productReference = A1D6C68D23C93BA200A408FD /* liblodepng.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A1D6C69823C93BDC00A408FD /* tinyxml */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D6C69A23C93BDC00A408FD /* Build configuration list for PBXNativeTarget "tinyxml" */;
+			buildPhases = (
+				A1D6C69523C93BDC00A408FD /* Headers */,
+				A1D6C69623C93BDC00A408FD /* Sources */,
+				A1D6C69723C93BDC00A408FD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tinyxml;
+			productName = tinyxml;
+			productReference = A1D6C69923C93BDC00A408FD /* libtinyxml.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -454,6 +539,12 @@
 						CreatedOnToolsVersion = 11.3;
 					};
 					A1D6C60623C928C700A408FD = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					A1D6C68C23C93BA200A408FD = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					A1D6C69823C93BDC00A408FD = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
@@ -473,6 +564,8 @@
 			targets = (
 				A1D6C55523C91E7700A408FD /* VVVVVV-macOS */,
 				A1D6C60623C928C700A408FD /* physfs */,
+				A1D6C68C23C93BA200A408FD /* lodepng */,
+				A1D6C69823C93BDC00A408FD /* tinyxml */,
 			);
 		};
 /* End PBXProject section */
@@ -482,7 +575,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D6C5D323C923BF00A408FD /* readme.txt in Resources */,
 				A1D6C55D23C91E7A00A408FD /* Assets.xcassets in Resources */,
 				A1D6C68623C9382300A408FD /* data.zip in Resources */,
 			);
@@ -495,18 +587,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D6C5D223C923BF00A408FD /* tinyxmlerror.cpp in Sources */,
 				A1D6C66023C92C0E00A408FD /* Ent.cpp in Sources */,
 				A1D6C66D23C92C0E00A408FD /* GraphicsResources.cpp in Sources */,
 				A1D6C67223C92C0E00A408FD /* KeyPoll.cpp in Sources */,
 				A1D6C67723C92C0E00A408FD /* BlockV.cpp in Sources */,
 				A1D6C66123C92C0E00A408FD /* Textbox.cpp in Sources */,
-				A1D6C5D123C923BF00A408FD /* tinyxmlparser.cpp in Sources */,
 				A1D6C65C23C92C0E00A408FD /* Finalclass.cpp in Sources */,
 				A1D6C67523C92C0E00A408FD /* BinaryBlob.cpp in Sources */,
 				A1D6C66723C92C0E00A408FD /* Otherlevel.cpp in Sources */,
-				A1D6C5D023C923BF00A408FD /* tinystr.cpp in Sources */,
-				A1D6C5D423C923BF00A408FD /* tinyxml.cpp in Sources */,
 				A1D6C66E23C92C0E00A408FD /* SoundSystem.cpp in Sources */,
 				A1D6C67023C92C0E00A408FD /* GraphicsUtil.cpp in Sources */,
 				A1D6C66A23C92C0E00A408FD /* SteamNetwork.c in Sources */,
@@ -532,7 +620,6 @@
 				A1D6C66523C92C0E00A408FD /* Tower.cpp in Sources */,
 				A1D6C66623C92C0E00A408FD /* Labclass.cpp in Sources */,
 				A1D6C65D23C92C0E00A408FD /* preloader.cpp in Sources */,
-				A1D6C5CA23C923BF00A408FD /* lodepng.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +640,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1D6C68A23C93BA200A408FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D6C69123C93BA800A408FD /* lodepng.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1D6C69623C93BDC00A408FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D6C69F23C93BEF00A408FD /* tinyxmlerror.cpp in Sources */,
+				A1D6C6A023C93BEF00A408FD /* tinyxml.cpp in Sources */,
+				A1D6C69E23C93BEF00A408FD /* tinyxmlparser.cpp in Sources */,
+				A1D6C69D23C93BEF00A408FD /* tinystr.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -560,6 +666,16 @@
 			isa = PBXTargetDependency;
 			target = A1D6C60623C928C700A408FD /* physfs */;
 			targetProxy = A1D6C61723C92AEE00A408FD /* PBXContainerItemProxy */;
+		};
+		A1D6C69423C93BBD00A408FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D6C68C23C93BA200A408FD /* lodepng */;
+			targetProxy = A1D6C69323C93BBD00A408FD /* PBXContainerItemProxy */;
+		};
+		A1D6C6A323C93BF800A408FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1D6C69823C93BDC00A408FD /* tinyxml */;
+			targetProxy = A1D6C6A223C93BF800A408FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -749,6 +865,54 @@
 			};
 			name = Release;
 		};
+		A1D6C68F23C93BA200A408FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1D6C69023C93BA200A408FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A1D6C69B23C93BDC00A408FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A1D6C69C23C93BDC00A408FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -775,6 +939,24 @@
 			buildConfigurations = (
 				A1D6C60923C928C700A408FD /* Debug */,
 				A1D6C60A23C928C700A408FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1D6C68E23C93BA200A408FD /* Build configuration list for PBXNativeTarget "lodepng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D6C68F23C93BA200A408FD /* Debug */,
+				A1D6C69023C93BA200A408FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1D6C69A23C93BDC00A408FD /* Build configuration list for PBXNativeTarget "tinyxml" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D6C69B23C93BDC00A408FD /* Debug */,
+				A1D6C69C23C93BDC00A408FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
